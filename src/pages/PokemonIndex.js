@@ -1,57 +1,60 @@
-import React from "react";
-import { Card, CardBody, CardTitle, CardSubtitle, Button, Row, Col, Container } from "reactstrap";
+import React , {useState} from "react";
+import { Card, CardBody, CardTitle, CardSubtitle, Container } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import "../styles/PokeIndex.css";
+
 
 const PokemonIndex = ({ pokemons }) => {
-  console.log(pokemons);
 
-  const containerStyle = {
-    backgroundImage: "url('https://images3.alphacoders.com/126/1260271.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: "100vh",
-    padding: "2rem",
-  };
+  const [search, setSearch] = useState("");
+
+  const filteredPokemons = pokemons.filter((pokemon) => {
+    const searchableString = `${pokemon.name} ${pokemon.species} ${pokemon.type}`.toLowerCase();
+    return searchableString.includes(search.toLowerCase())
+  });
 
   return (
-    <main style={containerStyle}>
-      <Container>
-        <Row>
-          {pokemons?.map((pokemon, index) => {
+      <Container className="index-page">
+        <div className="search-container">
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search pokemons"
+            className="search-input"
+          />
+        </div>
+        <div className="cardGrid-index">
+          {filteredPokemons.slice(0, 10).map((pokemon, index) => {
             return (
-              <Col xs={6} sm={4} md={3} lg={2} xl={2} key={index}>
-                <Card
-                  body
-                  className="text-center"
-                  color="warning"
-                  style={{
-                    width: "100%",
-                  }}
-                >
-                  <img alt={`profile of a pokemon named ${pokemon.name}`} src={pokemon.image} />
-                  <CardBody>
-                    <CardTitle tag="h5">{pokemon.name}</CardTitle>
-                    <CardSubtitle className="mb-2 text-muted" tag="h6">
-                      Species: {pokemon.species}
-                      <br />
-                      Size: {pokemon.size}
-                      <br />
-                      PokemonType: {pokemon.pokemon_type}
-                    </CardSubtitle>
-                    <Button color="danger" outline>
-                      <NavLink to={`/pokemonshow/${pokemon.id}`}>
-                        Click to view
-                      </NavLink>
-                    </Button>
-                  </CardBody>
-                </Card>
-              </Col>
-            );
+              <Card className="card-container-index" key={index} >
+                <img className="card-img-index" alt={`profile of a pokemon named ${pokemon.name}`} src={pokemon.image} />
+                <CardBody className="card-body-index">
+                  <CardTitle className="card-title-index" tag="h5">{pokemon.name}</CardTitle>
+                  <CardSubtitle className="card-subtitle-index" tag="h6">
+                    Name: {pokemon.name}
+                    <br />
+                    Species: {pokemon.species}
+                    <br />
+                    Type: {pokemon.type}
+                    <br />    
+                  </CardSubtitle>
+                    <div className="click-btn-container" tag="h6">
+                  <NavLink className="click-btn" to={`/pokemonshow/${pokemon.id}`}>
+                      View
+                  </NavLink>                  
+                    </div>
+                    <div className="card-rating-index">{pokemon.rating}</div>
+                </CardBody>
+              </Card>
+            )
           })}
-        </Row>
+        </div>
       </Container>
-    </main>
-  );
-};
+  )
+}
 
-export default PokemonIndex;
+
+  export default PokemonIndex;
+
+// 

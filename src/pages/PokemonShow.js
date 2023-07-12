@@ -28,7 +28,7 @@ const PokemonShow = ({ pokemons }) => {
             </CardSubtitle>
           </CardBody>
           <img
-            alt={`image of ${currentPokemon.name} who is a pokemon`}
+            alt={`img of ${currentPokemon.name} who is a pokemon`}
             src={currentPokemon.image}
             width="100%"
           />

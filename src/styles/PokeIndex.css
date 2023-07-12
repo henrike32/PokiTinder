@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+.index-page{
+  padding-bottom: 13%;
+  background-image: url("https://images3.alphacoders.com/126/1260271.jpg");
+  background-size: cover;
+  background-position:center;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.cardGrid-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 95rem;
+}
+
+.card-container-index {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.card-container-index:hover {
+  box-shadow: 0px 10px 16px #22ef1b;
+}
+
+.card-img-index {
+  width: 80%;
+  height: 55%;
+  border-radius: 1rem 1rem 0 0;
+  padding-top: 3rem;
+}
+
+.card-body-index {
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardStyle h5,
+.cardStyle h6 {
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
+}
+
+.card-container-index .card-rating-index{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
+  height: 3rem;
+  width: 2rem;
+  background-color: #f89553;
+  color: rgba(255, 255, 255, 0.075);
+  text-shadow: 2px 4px 4px rgb(5, 5, 5);
+  border-radius: 0.5rem;
+}
+
+.card-container-index .card-subtitle-index{
+  font-family: 'Mandali', sans-serif;
+  font-size: large;
+  color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+.search-container {
+  padding-left: 80%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.search-input {
+  border: 2px inset rgb(88, 255, 10);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+
+.click-btn-container{
+  font-family: 'Mandali', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 5%;
+  height: 2rem;
+  width: 5rem;
+  background-color: #0433b588;;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.click-btn {
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
+  color: rgb(88, 255, 10);
+  background-color: rgba(190, 212, 233, 0.234);
+  /* display: inline-block; */
+}
