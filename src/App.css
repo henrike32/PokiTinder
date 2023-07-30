@@ -38,7 +38,14 @@ img {
   justify-content: space-around;
 }
 
-.my-2 {
+
+
+.footer {
   height: auto;
   width: auto;
+  color: yellow;
+  position: fixed;
+  bottom: 0;
 }
+
+

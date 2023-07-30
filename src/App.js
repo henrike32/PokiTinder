@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Routes, Route } from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 import Header from "./components/Header"
 import Footer from "./components/Footer"
