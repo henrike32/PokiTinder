@@ -19,7 +19,7 @@ pokemons = [
         species:'flame',
         size:0.9,
         sound:'flarr',
-        image:'https://e7.pngegg.com/pngimages/519/282/png-clipart-pokemon-flareon-flareon-pokemon-games-pokemon-thumbnail.png',
+        image:'https://i.pinimg.com/1200x/72/f6/bb/72f6bb721495fd3f78186636497ccc5d.jpg',
         pokemon_type:'fire'
 
     },

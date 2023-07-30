@@ -3,7 +3,7 @@
 
 .index-page{
   padding-bottom: 13%;
-  background-image: url("https://images3.alphacoders.com/126/1260271.jpg");
+  background-image: url("https://pbs.twimg.com/media/Ce6nqVLUUAAIULI.png:large");
   background-size: cover;
   background-position:center;
   display: flex; 
@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 95rem;
+  max-width: 90rem;
 }
 
 .card-container-index {
@@ -37,10 +37,10 @@
 }
 
 .card-img-index {
-  width: 80%;
-  height: 55%;
+  width: 100px;
+  height: 100px;
   border-radius: 1rem 1rem 0 0;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .card-body-index {
@@ -75,9 +75,10 @@
 
 .card-container-index .card-subtitle-index{
   font-family: 'Mandali', sans-serif;
-  font-size: large;
-  color: rgba(255, 255, 255, 0);
-  position: relative;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  position:sticky;
+  padding: 15px;
 }
 
 .search-container {
@@ -87,7 +88,7 @@
 }
 
 .search-input {
-  border: 2px inset rgb(88, 255, 10);
+  border: 2px inset #020202;
   padding: 0.5rem;
   border-radius: 1rem;
 }
@@ -98,17 +99,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 5%;
   height: 2rem;
   width: 5rem;
-  background-color: #0433b588;;
+  background-color: #020202;;
   color: rgb(0, 0, 0);
-  text-decoration: none;
+  border-radius: 1rem;
 }
 
 .click-btn {
   font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
   color: rgb(88, 255, 10);
-  background-color: rgba(190, 212, 233, 0.234);
-  /* display: inline-block; */
 }

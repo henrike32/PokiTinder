@@ -1,25 +1,23 @@
 import React from "react";
-import "../styles/Header.css"
-import pokemonLogo from '../pokemonLogo.png'; // Make sure this path is correct
-
+import "../styles/Header.css";
+import pokemonLogo from '../assets/pokemonLogo.png';
+import headerPoke from '../assets/headerPoke.jpeg';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const imageUrl = {pokemonLogo}  
-  return ( 
-  
-  <div className="header-with-gradient-line">
-    <header  
-        style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "14vh",
-        background: `url(${imageUrl}) no-repeat center center`,
-        backgroundSize: "cover",
-      }}
-    ></header>
-
-  </div>
-)
+  return (
+    <>
+      <div className="header-with-gradient-line">
+        <header className="App-header">
+          <div className="header-logo">
+            <NavLink to={'/pokemonIndex'}>
+              <img src={pokemonLogo} alt="Pokemon Logo" />
+            </ NavLink>
+          </div>
+        </header>
+      </div>
+    </>
+  )
 }
+
 export default Header
