@@ -8,8 +8,6 @@ import "../styles/PokeShow.css";
 const PokemonShow = ({ pokemons }) => {
   const { id } = useParams()
   let currentPokemon = pokemons?.find((pokemon) => pokemon.id === +id)
-  // console.log(currentPokemon)
-
     return(
       <main className="show-page">
         <div className="card-show">
@@ -49,7 +47,7 @@ const PokemonShow = ({ pokemons }) => {
                 
               </CardBody>
                 <NavLink to={ `/pokemonedit/${ currentPokemon.id }` } className="nav-link">
-                  Edit Poke Profile
+                  Edit Poke
                 </NavLink>
             </Card>
             

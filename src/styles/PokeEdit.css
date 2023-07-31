@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+/* Background Image */
+.edit-background-image {
+  background-image: url("https://pbs.twimg.com/media/Ce6nqVLUUAAIULI.png:large");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Form */
+.edit-form {
+  margin-bottom: 10%;
+  max-width: 900px;
+  margin: 0 auto; 
+  padding-top: 8%;
+  display:block;
+  align-content: center;
+  align-items: center;
+  color: rgba(22, 93, 185, 0.805);
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
+}
+
+/* Texts */
+.edit-text {
+  font-family: 'Mandali', sans-serif;
+  text-shadow: 2px 4px 4px #22ef1b;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+
+/* Background Image */
+.edit-page-background-image {
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  border: 5px inset rgba(22, 93, 185, 0.805);
+  /* padding-bottom: 0.5rem; */
+}
+
+.button {
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
+  background-color: black;
+  align-self: center;
+  width: 200px;
+  height: 35px;
+  color: #22ef1b;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  margin: 20px auto; /* Center horizontally */
+  text-align: center; 
+  text-decoration: underline;
+  display: block; /* Make it a block element */
+}
+
+.button:hover{
+  color:black;
+  background-color: #22ef1b;
+}
+
+.row {
+justify-content: center;
+display: flex;
+}

@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-family: 'Mandali', sans-serif;
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
   font-size: 18px;
   text-align: center;
   position: sticky;
@@ -28,11 +28,11 @@
   border-radius: 1rem;
   transition: box-shadow 0.3s ease; /* Smooth transition for the hover effect */
 }
+
 /* 
 .nav-link:hover  {
   box-shadow: 0px 4px 8px rgba(34, 239, 27, 0.5); /* Adjusted shadow for a softer effect */
-}
- */
+
 
 
 .card-title {
@@ -40,6 +40,7 @@
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: blue;
+  font-size: 20px;
   font-weight: bold;
   border-radius: 1rem;
 }
@@ -55,14 +56,21 @@
 }
 
 .nav-link {
-  text-align: center;
-  font-family: 'Mandali', sans-serif;
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
   background-color: black;
-  color: #22ef1b;
-  width: 200px;
   align-self: center;
+  width: 200px;
+  height: 35px;
+  color: #22ef1b;
   border-radius: 20px;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+  padding-top: 3px;
+  margin: 20px auto; /* Center horizontally */
+  text-align: center; 
+  text-decoration: underline;
+  display: block; /* Make it a block element */
 }
 
+.nav-link:hover{
+  color:black;
+  background-color: #22ef1b;
+}
