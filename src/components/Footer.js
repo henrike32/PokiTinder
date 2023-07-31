@@ -4,15 +4,9 @@ import { Navbar, NavbarBrand } from "reactstrap"
 const Footer = () => {
   return(
     <>
-      <Navbar
-        className="my-2"
-        color="warning"
-        fixed="bottom"
-      >
-        <NavbarBrand href="/">
+      <div className="footer">
           &copy; Justin & Henri
-        </NavbarBrand>
-      </Navbar>
+      </div>
     </>
   )
 }

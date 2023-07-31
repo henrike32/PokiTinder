@@ -9,7 +9,7 @@ const PokemonIndex = ({ pokemons }) => {
   const [search, setSearch] = useState("");
 
   const filteredPokemons = pokemons.filter((pokemon) => {
-    const searchableString = `${pokemon.name} ${pokemon.species} ${pokemon.type}`.toLowerCase();
+    const searchableString = `${pokemon.name} ${pokemon.species} ${pokemon.pokemon_type}`.toLowerCase();
     return searchableString.includes(search.toLowerCase())
   });
 
@@ -36,7 +36,7 @@ const PokemonIndex = ({ pokemons }) => {
                     <br />
                     Species: {pokemon.species}
                     <br />
-                    Type: {pokemon.type}
+                    Type: {pokemon.pokemon_type}
                     <br />    
                   </CardSubtitle>
                     <div className="click-btn-container" tag="h6">
@@ -56,5 +56,3 @@ const PokemonIndex = ({ pokemons }) => {
 
 
   export default PokemonIndex;
-
-// 
