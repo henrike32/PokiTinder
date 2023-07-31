@@ -60,24 +60,8 @@
   font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
 }
 
-.card-container-index .card-rating-index{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 2%;
-  bottom: 2%;
-  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
-  height: 3rem;
-  width: 2rem;
-  background-color:  rgba(22, 93, 185, 0.805);
-  color: rgba(255, 255, 255, 0.075);
-  text-shadow: 2px 4px 4px rgb(5, 5, 5);
-  border-radius: 0.5rem;
-}
-
 .card-container-index .card-subtitle-index{
-  font-family: 'Mandali', sans-serif;
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
   font-size: 18px;
   color: rgb(0, 0, 0);
   position:sticky;
@@ -99,7 +83,7 @@
 
 
 .click-btn-container{
-  font-family: 'Mandali', sans-serif;
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,9 +1,13 @@
-/* Footer */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
 
+/* Footer */
 .footer {
+  font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
   height: auto;
   width: auto;
   color: yellow;
   position: fixed;
   bottom: 0;
+  left: 10px;
 }
