@@ -1,0 +1,9 @@
+/* Footer */
+
+.footer {
+  height: auto;
+  width: auto;
+  color: yellow;
+  position: fixed;
+  bottom: 0;
+}

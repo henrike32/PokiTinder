@@ -44,7 +44,7 @@ const PokemonIndex = ({ pokemons }) => {
                       View
                   </NavLink>                  
                     </div>
-                    <div className="card-rating-index">{pokemon.rating}</div>
+                    {/* <div className="card-rating-index">{pokemon.rating}</div> */}
                 </CardBody>
               </Card>
             )

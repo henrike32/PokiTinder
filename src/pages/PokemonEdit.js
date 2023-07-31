@@ -109,7 +109,7 @@ const PokemonEdit = ({ pokemons, updatePokemon }) => {
           />
         </FormGroup>
         <Button onClick={ handleSubmit } name="submit">
-          Submit Updated Cat
+          Update
         </Button>
       </Form>
     </>

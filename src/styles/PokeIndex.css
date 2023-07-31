@@ -25,8 +25,8 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  width: 22rem;
+  height: 21rem;
   border-radius: 1rem;
   margin: 1rem;
   padding: 1rem;
@@ -37,10 +37,13 @@
 }
 
 .card-img-index {
-  width: 100px;
-  height: 100px;
-  border-radius: 1rem 1rem 0 0;
+  width: 170px;
+  height: 135px;
+  border-radius: 1rem;
   padding-top: 1rem;
+  align-self: center;
+  border: 0.5px inset rgba(22, 93, 185, 0.805);
+  border-width: 5px;
 }
 
 .card-body-index {
@@ -67,7 +70,7 @@
   font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace;
   height: 3rem;
   width: 2rem;
-  background-color: #f89553;
+  background-color:  rgba(22, 93, 185, 0.805);
   color: rgba(255, 255, 255, 0.075);
   text-shadow: 2px 4px 4px rgb(5, 5, 5);
   border-radius: 0.5rem;
@@ -91,6 +94,7 @@
   border: 2px inset #020202;
   padding: 0.5rem;
   border-radius: 1rem;
+  /* margin-left: -150%; */
 }
 
 

@@ -1,63 +1,18 @@
-.App {
-  text-align: center;
-}
+/* Deprecated code */
 
-
-.App-link {
-  color: #0a88ab;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.card {
+/* .card {
   margin: 4rem 0;
   height: 300px;
-}
+} */
 
-.card2 {
+/* .card2 {
   margin: 2rem 0;
   height: 100%;
-}
+} */
 
-img {
-  height: 150px;
-  width: 150px;
-  margin: 0 auto;
-}
 
-.cat-index-cards {
+/* .cat-index-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-
-/* Footer */
-
-.footer {
-  height: auto;
-  width: auto;
-  color: yellow;
-  position: fixed;
-  bottom: 0;
-}
-
-
-/* Header */
-
-.header {
-  display: flex;
-  justify-Content: center;
-  align-Items: center;
-  height: 10vh;
-  width: 100%;
-  background-size:contain;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qiN8YkQyF23Cjy9S1nL53EVIxJqj2Jf8_gZ_WjrUc0BHjyGKPsAdu6j4Yxb8zFnVbL0&usqp=CAU");
-}
+} */

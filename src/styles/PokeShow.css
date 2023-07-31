@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+.show-page{
+  padding-bottom: 13%;
+  background-image: url("https://pbs.twimg.com/media/Ce6nqVLUUAAIULI.png:large");
+  background-size: cover;
+  background-position:center;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+
+.card-show {
+  margin: 5rem 0;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Mandali', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  position: sticky;
+  padding: 10px;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+}
+/* 
+.nav-link:hover  {
+  box-shadow: 0px 4px 8px rgba(34, 239, 27, 0.5); /* Adjusted shadow for a softer effect */
+}
+ */
+
+
+.card-title {
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: blue;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.img-show{
+  display: block;
+  height: 300px;
+  width: 300px;
+  align-self: center;
+  border-radius: 1rem;
+  border: 1px inset rgba(22, 93, 185, 0.805);;
+  border-width: 5px;
+}
+
+.nav-link {
+  text-align: center;
+  font-family: 'Mandali', sans-serif;
+  background-color: black;
+  color: #22ef1b;
+  width: 200px;
+  align-self: center;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
