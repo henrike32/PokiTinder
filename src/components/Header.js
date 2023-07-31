@@ -11,7 +11,7 @@ const Header = () => {
         <header className="App-header">
           <div className="header-logo">
             <NavLink to={'/pokemonIndex'}>
-              <img src={pokemonLogo} alt="Pokemon Logo" />
+              <img className="header-logo" src={pokemonLogo} alt="Pokemon Logo" />
             </ NavLink>
           </div>
         </header>
