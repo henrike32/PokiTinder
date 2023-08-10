@@ -5485,3 +5485,47 @@ Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 985)
 ActiveRecord::RecordNotFound (Couldn't find Pokemon with 'id'=undefined):
   
 app/controllers/pokemons_controller.rb:18:in `update'
+Started GET "/pokemons" for ::1 at 2023-08-10 19:24:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (14.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (2.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 18.5ms | ActiveRecord: 22.4ms | Allocations: 10217)
+
+
+Started GET "/pokemons" for ::1 at 2023-08-10 19:24:46 -0400
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1602)
+
+
+Started GET "/pokemons" for ::1 at 2023-08-10 19:36:42 -0400
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 127ms (Views: 125.6ms | ActiveRecord: 20.0ms | Allocations: 4461)
+
+
+Started GET "/pokemons" for ::1 at 2023-08-10 19:36:42 -0400
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1589)
+
+
+Started GET "/pokemons" for ::1 at 2023-08-10 19:37:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 5.2ms | ActiveRecord: 6.2ms | Allocations: 10217)
+
+
+Started GET "/pokemons" for ::1 at 2023-08-10 19:37:09 -0400
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1590)
+
+
