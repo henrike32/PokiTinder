@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+
+.home-page{
+  padding-bottom: 13%;
+  background-image: url("https://pbs.twimg.com/media/Ce6nqVLUUAAIULI.png:large");
+  background-size: cover;
+  background-position:center;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
