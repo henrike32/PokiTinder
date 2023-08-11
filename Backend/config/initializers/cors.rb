@@ -4,11 +4,10 @@
 # Read more: https://github.com/cyu/rack-cors
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
-    allow do
-      origins '*'  # <- change this to allow requests from any domain while in development.
-  
-      resource '*',
-        headers: :any,
-        methods: [:get, :post, :put, :patch, :delete, :options, :head]
-    end
+  allow do
+    origins 'https://poki-tinder.netlify.app/', 'https://poki-tinder-git-main-henrike32.vercel.app/'
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
+end
