@@ -1,6 +1,6 @@
 import React from "react"
 import { NavLink, useParams } from "react-router-dom"
-import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap"
+import { Card, CardBody, CardTitle, CardText } from "reactstrap"
 import "../styles/PokeShow.css";
 
 

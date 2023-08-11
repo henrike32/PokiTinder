@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
 import pokemonLogo from '../assets/pokemonLogo.png';
-import headerPoke from '../assets/headerPoke.jpeg';
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
