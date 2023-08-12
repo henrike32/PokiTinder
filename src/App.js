@@ -26,8 +26,6 @@ const App = () => {
 
   const url = "https://poki-tinder-48xawxond-henrike32.vercel.app"
 
-  
-
   const readPokemon = () => {
     fetch(`${url}/pokemons`)
     .then(response => response.json())
@@ -59,7 +57,7 @@ const App = () => {
       method: "PATCH"
     })
       .then((response) => response.json())
-      .then((payload) => updatePokemons(payload))
+      .then((payload) => updatePokemon(payload))
       .catch((errors) => console.log("Pokemon update errors:", errors));
   }
   
