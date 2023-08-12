@@ -24,7 +24,7 @@ const App = () => {
   }, [])
 
   const readPokemon = () => {
-    fetch("http://localhost:3000/pokemons")
+    fetch("http://poki-tinder.vercel.app/pokemonIndex")
       .then((response) => response.json())
       .then((payload) => {
         setPokemons(payload)
