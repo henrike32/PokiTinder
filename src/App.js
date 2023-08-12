@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
@@ -46,7 +45,7 @@ const App = () => {
       .catch((errors) => console.log("Pokemon create errors:", errors))
   }
 
-  const updatePokemon= (pokemon, id) => {
+  const updatePokemon = (pokemon, id) => {
     fetch(`http://localhost:3000/pokemons/${id}`, {
       body: JSON.stringify(pokemon),
       headers: {
@@ -55,10 +54,21 @@ const App = () => {
       method: "PATCH"
     })
     .then((response) => response.json())
-    .then((payload) => updatePokemon(payload))
-    .catch((errors) => console.log("Pokemon create errors:", errors))
+    .then((payload) => {
+      // Update the pokemons state with the updated payload
+      setPokemons((prevPokemons) => {
+        const updatedPokemons = prevPokemons.map((p) => {
+          if (p.id === payload.id) {
+            return payload;
+          }
+          return p;
+        });
+        return updatedPokemons;
+      });
+    })
+    .catch((errors) => console.log("Pokemon update errors:", errors));
   }
-
+  
   return(
     <>
       <Header />     
