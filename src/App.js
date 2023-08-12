@@ -23,24 +23,22 @@ const App = () => {
     readPokemon()
   }, [])
 
+
+  const url = "https://poki-tinder-48xawxond-henrike32.vercel.app"
+
+  
+
   const readPokemon = () => {
-    fetch("https://poki-tinder.vercel.app")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Request failed with status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((payload) => {
-        setPokemons(payload);
-      })
-      .catch((error) => {
-        console.error("Error fetching pokemons:", error);
-      });
-  }
+    fetch(`${url}/pokemons`)
+    .then(response => response.json())
+    .then(payload => {
+      setPokemons(payload)
+    })
+    .catch((error) => console.log(error))
+}
   
   const createPokemon = (pokemon) => {
-    fetch("https://poki-tinder.vercel.app", {
+    fetch(`${url}/pokemons`, {
       body: JSON.stringify(pokemon),
       headers: {
         "Content-Type": "application/json"
@@ -53,27 +51,16 @@ const App = () => {
   }
   
   const updatePokemon = (pokemon, id) => {
-    fetch(`"https://poki-tinder.vercel.app"/${id}`, {
+    fetch(`${url}/pokemons/${id}`, {
       body: JSON.stringify(pokemon),
       headers: {
         "Content-Type": "application/json"
       },
       method: "PATCH"
     })
-    .then((response) => response.json())
-    .then((payload) => {
-      // Update the pokemons state with the updated payload
-      setPokemons((prevPokemons) => {
-        const updatedPokemons = prevPokemons.map((p) => {
-          if (p.id === payload.id) {
-            return payload;
-          }
-          return p;
-        });
-        return updatedPokemons;
-      });
-    })
-    .catch((errors) => console.log("Pokemon update errors:", errors));
+      .then((response) => response.json())
+      .then((payload) => updateGame(payload))
+      .catch((errors) => console.log("Pokemon update errors:", errors));
   }
   
   return(
