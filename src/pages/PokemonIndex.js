@@ -6,8 +6,8 @@ import "../styles/PokeIndex.css";
 
 const PokemonIndex = ({ pokemons }) => {
 
-  const [search, setSearch] = useState("");
-
+  const [search, setSearch] = useState("")
+  
   const filteredPokemons = pokemons.filter((pokemon) => {
     const searchableString = `${pokemon.name} ${pokemon.species} ${pokemon.pokemon_type}`.toLowerCase();
     return searchableString.includes(search.toLowerCase())

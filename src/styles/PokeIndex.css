@@ -13,6 +13,16 @@
   min-width: 100%;
 }
 
+.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust the height as needed */
+  font-size: 1.2rem;
+  color: #e31818; /* Adjust the color as needed */
+}
+
+
 .cardGrid-index {
   display: flex;
   flex-wrap: wrap;
