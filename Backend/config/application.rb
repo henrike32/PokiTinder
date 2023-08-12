@@ -32,6 +32,11 @@ module PokiTinderBackend
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
-    config.generators.system_tests = nil
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'https://poki-tinder-henrike32.vercel.app' # Update with your frontend domain
+        resource '*', headers: :any, methods: [:get, :post, :patch, :put, :delete, :options]
+      end
+    end
   end
 end
