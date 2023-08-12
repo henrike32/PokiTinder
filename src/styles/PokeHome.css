@@ -3,14 +3,14 @@
 
 
 .home-page{
-  padding-bottom: 13%;
+  padding-bottom: 10%;
   background-image: url("https://pbs.twimg.com/media/Ce6nqVLUUAAIULI.png:large");
   background-size: cover;
   background-position:center;
   display: flex; 
   flex-wrap: wrap;
   justify-content: center;
-  height: 60rem;
+  height: 52.55rem;
   width: 100%;
 }
 
@@ -23,8 +23,8 @@
   justify-content: space-between;
   margin: 1.8rem;
   position: relative;
-  padding: 1rem;
   width: 51rem;
+  height: 50rem;
 }
 
 .card-img-home {
@@ -33,7 +33,6 @@
   width: 50rem;
   /* padding-top: 1rem; */
   border: 0.5px inset rgba(22, 93, 185, 0.805);
-
 }
 
 .card-container-home:hover {
@@ -56,12 +55,11 @@
 }
 
 .card-container-home .card-subtitle-home{
-  /* font-family: 'Orbitron', sans-serif, 'Ubuntu Mono', monospace; */
+  font-family: 'aero';
   font-size: 18px;
   font-weight: 300 !important;
   color: rgb(239, 9, 9);
   position:relative;
-  padding: 0.5rem;
 }
 
 
