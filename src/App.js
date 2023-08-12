@@ -19,13 +19,11 @@ const App = () => {
   const [pokemons, setPokemons] = useState([])
   const [loading, setLoading] = useState(true); // Add loading state
 
-
   useEffect(() => {
     readPokemon()
   }, [])
 
-
-  const url = "https://poki-tinder.vercel.app/pokemons"
+  const url = "https://poki-tinder.vercel.a"
 
   const readPokemon = () => {
     setLoading(true); // Set loading to true when starting to fetch data
