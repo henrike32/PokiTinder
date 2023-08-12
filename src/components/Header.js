@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header-with-gradient-line">
         <header className="App-header">
           <div className="header-logo">
-            <NavLink to={'/pokemonhome'}>
+            <NavLink to={'/'}>
               <img className="header-logo" src={pokemonLogo} alt="Pokemon Logo" />
             </ NavLink>
           </div>

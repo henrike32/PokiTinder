@@ -72,7 +72,7 @@ const App = () => {
     <>
       <Header />     
       <Routes>
-        <Route path="/pokemonhome" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/pokemonindex" element={<PokemonIndex pokemons={pokemons} />} />
         <Route path="/pokemonshow/:id" element={<PokemonShow pokemons={pokemons}/>} />
         <Route path="/pokemonedit/:id" element={ <PokemonEdit pokemons={ pokemons } updatePokemon={updatePokemon}/>} />
