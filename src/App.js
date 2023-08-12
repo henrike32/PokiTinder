@@ -24,7 +24,7 @@ const App = () => {
   }, [])
 
   const readPokemon = () => {
-    fetch("https://poki-tinder.vercel.app/pokemonIndex")
+    fetch("https://poki-tinder-o77cf8y72-henrike32.vercel.app")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Request failed with status: ${response.status}`);
@@ -40,7 +40,7 @@ const App = () => {
   }
   
   const createPokemon = (pokemon) => {
-    fetch("https://poki-tinder.vercel.app/pokemons", {
+    fetch("https://poki-tinder-o77cf8y72-henrike32.vercel.app", {
       body: JSON.stringify(pokemon),
       headers: {
         "Content-Type": "application/json"
@@ -53,7 +53,7 @@ const App = () => {
   }
   
   const updatePokemon = (pokemon, id) => {
-    fetch(`https://poki-tinder.vercel.app/pokemons/${id}`, {
+    fetch(`https://poki-tinder-o77cf8y72-henrike32.vercel.app/${id}`, {
       body: JSON.stringify(pokemon),
       headers: {
         "Content-Type": "application/json"
