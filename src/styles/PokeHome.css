@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 60rem;
-  width: 132rem;
+  width: 100%;
 }
 
 .card-container-home {
