@@ -24,12 +24,12 @@ const App = () => {
   }, [])
 
   const readPokemon = () => {
-    fetch("http://poki-tinder.vercel.app/pokemonIndex")
+    fetch("https://poki-tinder.vercel.app/pokemonIndex")
       .then((response) => response.json())
       .then((payload) => {
-        setPokemons(payload)
+        setPokemons(payload);
       })
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
   }
 
   const createPokemon = (pokemon) => {
