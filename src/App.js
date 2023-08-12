@@ -14,7 +14,6 @@ import PokemonShow from "./pages/PokemonShow"
 import PokemonNew from "./pages/PokemonNew"
 import PokemonEdit from "./pages/PokemonEdit"
 
-import "./App.css"
 
 const App = () => {
   const [pokemons, setPokemons] = useState([])
