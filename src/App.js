@@ -25,12 +25,20 @@ const App = () => {
 
   const readPokemon = () => {
     fetch("https://poki-tinder.vercel.app/pokemonIndex")
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Request failed with status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((payload) => {
         setPokemons(payload);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.error("Error fetching pokemons:", error);
+      });
   }
+  
 
   const createPokemon = (pokemon) => {
     fetch("http://localhost:3000/pokemons", {
