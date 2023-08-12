@@ -23,21 +23,18 @@ const App = () => {
     readPokemon()
   }, [])
 
-  const url = "https://poki-tinder.vercel.a"
+  const url = "https://pep-shy-rain-49280703-pooler.us-east-1.postgres.vercel-storage.com"
+
+  // const url = "https://localhost/3000"
+ 
 
   const readPokemon = () => {
-    setLoading(true); // Set loading to true when starting to fetch data
-
     fetch(`${url}/pokemons`)
-      .then((response) => response.json())
-      .then((payload) => {
-        setPokemons(payload);
-        setLoading(false); // Data is fetched, set loading to false
+      .then(response => response.json())
+      .then(payload => {
+        setPokemons(payload)
       })
-      .catch((errors) => {
-        console.log("Pokemon read errors:", errors);
-        setLoading(false); // Handle error by setting loading to false
-      })
+      .catch((error) => console.log(error))
   }
   
   const createPokemon = (pokemon) => {

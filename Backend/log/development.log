@@ -5621,3 +5621,31 @@ Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.6ms | Allocations: 1588)
 
   [1m[36mPokemon Load (5.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
   [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+Started GET "/rails/info/routes" for ::1 at 2023-08-12 14:45:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/learnacademy/.rvm/gems/ruby-3.2.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.2.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/learnacademy/.rvm/gems/ruby-3.2.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [38 times] (Duration: 7.7ms | Allocations: 6313)
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.2.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.9ms | Allocations: 1150)
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.2.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 14.7ms | Allocations: 11572)
+  Rendered layout /Users/learnacademy/.rvm/gems/ruby-3.2.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb (Duration: 15.6ms | Allocations: 11871)
+Completed 200 OK in 26ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 15825)
+
+
+Started GET "/pokemons" for ::1 at 2023-08-12 14:47:45 -0400
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 10.0ms | ActiveRecord: 7.9ms | Allocations: 8999)
+
+
+Started GET "/pokemons" for ::1 at 2023-08-12 14:59:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 7.9ms | ActiveRecord: 6.3ms | Allocations: 10217)
+
+
