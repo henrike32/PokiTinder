@@ -39,9 +39,8 @@ const App = () => {
       });
   }
   
-
   const createPokemon = (pokemon) => {
-    fetch("http://localhost:3000/pokemons", {
+    fetch("https://poki-tinder.vercel.app/pokemons", {
       body: JSON.stringify(pokemon),
       headers: {
         "Content-Type": "application/json"
@@ -50,11 +49,11 @@ const App = () => {
     })
       .then((response) => response.json())
       .then((payload) => readPokemon(payload))
-      .catch((errors) => console.log("Pokemon create errors:", errors))
+      .catch((errors) => console.log("Pokemon create errors:", errors));
   }
-
+  
   const updatePokemon = (pokemon, id) => {
-    fetch(`http://localhost:3000/pokemons/${id}`, {
+    fetch(`https://poki-tinder.vercel.app/pokemons/${id}`, {
       body: JSON.stringify(pokemon),
       headers: {
         "Content-Type": "application/json"
