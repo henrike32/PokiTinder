@@ -5,7 +5,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://poki-tinder-48xawxond-henrike32.vercel.app'
+    origins 'https://poki-tinder.vercel.app'
     resource '*',
     headers: ["Authorization"],
     expose: ["Authorization"],

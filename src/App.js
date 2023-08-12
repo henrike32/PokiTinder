@@ -24,7 +24,7 @@ const App = () => {
   }, [])
 
 
-  const url = "https://poki-tinder-48xawxond-henrike32.vercel.app"
+  const url = "https://poki-tinder.vercel.app/pokemons"
 
   const readPokemon = () => {
     fetch(`${url}/pokemons`)
