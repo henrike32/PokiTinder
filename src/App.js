@@ -59,7 +59,7 @@ const App = () => {
       method: "PATCH"
     })
       .then((response) => response.json())
-      .then((payload) => updateGame(payload))
+      .then((payload) => updatePokemons(payload))
       .catch((errors) => console.log("Pokemon update errors:", errors));
   }
   
