@@ -32,7 +32,7 @@ const App = () => {
     .then(payload => {
       setPokemons(payload)
     })
-    .catch((error) => console.log(error))
+    .catch((errors) => console.log("Pokemon read errors:", errors))
 }
   
   const createPokemon = (pokemon) => {
