@@ -16,12 +16,12 @@
 
 .card-container-home {
   background-color: #121212e4;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   color: yellow;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1.8rem;
+  margin: 1.0rem;
   position: relative;
   width: 51rem;
   height: 50rem;
@@ -32,7 +32,7 @@
   height: 40rem;
   width: 50rem;
   /* padding-top: 1rem; */
-  border: 0.5px inset rgba(22, 93, 185, 0.805);
+  /* border: 0.5px inset rgba(22, 93, 185, 0.805); */
 }
 
 .card-container-home:hover {
