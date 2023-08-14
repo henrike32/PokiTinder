@@ -81,6 +81,10 @@ test:
 #
 production:
   <<: *default
-  database: poki_tinder_backend_production
-  username: poki_tinder_backend
-  password: <%= ENV["POKI_TINDER_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
+# production:
+#   <<: *default
+#   database: poki_tinder_backend_production
+#   username: poki_tinder_backend
+#   password: <%= ENV['POKI_TINDER_BACKEND_DATABASE_PASSWORD'] %>
