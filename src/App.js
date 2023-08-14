@@ -23,8 +23,9 @@ const App = () => {
     readPokemon()
   }, [])
 
-  const url = "https://fpoki-tinder.onrender.com"
+  // const url = "https://fpoki-tinder.onrender.com"
   // const url = "https://localhost/3000"
+  const url = "https://ep-dawn-voice-30859700-pooler.us-east-1.postgres.vercel-storage.com"
  
 
   const readPokemon = () => {
