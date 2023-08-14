@@ -15,4 +15,4 @@ services:
           name: poki_tinder_backend
           property: connectionString
       - key: RAILS_MASTER_KEY
-        sync: false
+        sync: false      
