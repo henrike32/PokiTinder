@@ -23,8 +23,8 @@ const App = () => {
     readPokemon()
   }, [])
 
-  // const url = "https://pep-shy-rain-49280703-pooler.us-east-1.postgres.vercel-storage.com"
-  const url = "https://localhost/3000"
+  const url = "https://fpoki-tinder.onrender.com"
+  // const url = "https://localhost/3000"
  
 
   const readPokemon = () => {
